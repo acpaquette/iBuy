@@ -3,6 +3,7 @@ package net.grio.ibuy;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -83,13 +84,31 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         });
 
         Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
-        mEmailSignInButton.setOnClickListener(new OnClickListener() {
+        /*mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
                 attemptLogin();
             }
-        });
-
+        });*/
+        mEmailSignInButton.setOnClickListener(new Button.OnClickListener()
+            {
+                public void onClick(View v)
+                {
+                    Intent myAbout = new Intent(v.getContext(), ListActivity.class);
+                    startActivity(myAbout);
+                }
+            }
+        );
+        Button regButton = (Button) findViewById(R.id.register);
+        regButton.setOnClickListener(new Button.OnClickListener()
+            {
+                public void onClick(View v)
+                {
+                    Intent myReg = new Intent(v.getContext(), SignUpActivity.class);
+                    startActivity(myReg);
+                }
+            }
+        );
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
     }
