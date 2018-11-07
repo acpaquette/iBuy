@@ -60,8 +60,7 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/lowPriceButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/map" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/lowPriceButton"
