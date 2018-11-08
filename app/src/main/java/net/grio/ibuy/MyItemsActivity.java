@@ -1,6 +1,7 @@
 package net.grio.ibuy;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +14,7 @@ public class MyItemsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_items);
 
-        Button addItem = findViewById(R.id.floatingActionButton);
+        FloatingActionButton addItem = findViewById(R.id.floatingActionButton);
         addItem.setOnClickListener(
                 new Button.OnClickListener()
                 {

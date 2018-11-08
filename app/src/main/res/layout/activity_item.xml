@@ -15,9 +15,10 @@
         android:layout_marginTop="283dp"
         android:layout_marginBottom="12dp"
         android:ems="10"
+        android:hint="Item Name"
         android:inputType="textPersonName"
+        android:selectAllOnFocus="false"
         android:singleLine="false"
-        android:text="Item Name"
         app:layout_constraintBottom_toTopOf="@+id/lowPriceButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -54,9 +55,10 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="0dp"
+        android:layout_height="264dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="74dp"
+        android:background="@drawable/map"
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/lowPriceButton"
         app:layout_constraintStart_toStartOf="parent"
